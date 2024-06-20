@@ -16,7 +16,7 @@ This project is a clone of the UltraEdit website, created using only HTML and CS
 You can view the live version of the UltraEdit clone [here](https://ultra-edit-clone-psi.vercel.app/)
 
 # Repository
-The code for this project is available on GitHub. You can find the repository [here](https://github.com/adity3902/UltraEdit).
+The code for this project is available on GitHub. You can find the repository [here](https://github.com/developer-adityaSingh/UltraEdit.git).
 
 # Author
 This project was created by Aditya Singh. If you have any questions or feedback, feel free to contact me via GitHub.
