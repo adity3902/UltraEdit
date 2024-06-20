@@ -7,22 +7,19 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav{
+nav ul{
     display: flex;
-    justify-content: space-around;     ;
+    justify-content: flex-end;
     align-items: center;
     padding: 15px;
+    width: 100%;
+}
+nav .logo{
+    margin-right: auto;
 }
 nav .logo img{
     width: 155px;
     cursor: pointer;
-}
-
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    padding: 22px;
 }
 
 nav ul li{
@@ -122,32 +119,37 @@ main{
 .box-download p{
     margin-top: 15px;
 }
-.newsLetter{
+.news-all{
     background-color: #222222;
-    height: 80vh;
+    /* height: 80vh; */
     margin-top: 20px;
 }
 .news-top{
-    height: 40vh;
+    /* height: 40vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 150px;
 }
 .news-down{
-    height: 40vh;
+    /* height: 40vh; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 70vw;
-    margin: auto;
+    margin: 25px auto 0 auto;
     color: white;
-    line-height: 30px;
+    line-height: 1.8;
+}
+
+.news-down p:last-child{
+    margin-bottom: 25px;
 }
 .news-top span{
     text-align: center;
     flex-basis: 30%;
     color:white;
+    margin-top: 16px;
 }
 
 .news-top span h3{
@@ -165,7 +167,7 @@ main{
     align-items: center;
     background-color: white;
     border-radius: 12px;
-    width: 380px;
+    /* width: 380px; */
     padding: 20px;
 }
 .sign-up label{
@@ -176,7 +178,7 @@ main{
     padding: 15px;
     font-size: 15px;
     color: #222222;
-    width:300px;
+    width:280px;
     border: 2px solid rgba(128, 128, 128, 0.642);
 }
 .sign-up h3{
@@ -253,4 +255,148 @@ main{
 footer p{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    width: 40vw;
+    right: 0;
+    z-index: 999;
+    flex-direction: column;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: white;
+    display: none;
+}
+
+@media only screen and (min-width:880px)
+{
+    .hideOnPc{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:450px) and (max-width:880px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    .f .first{
+        font-size: 35px;
+    }
+    .download .f{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .download .scnd{
+        width: 80vw;
+        font-size: 18px;
+        padding: 20px;
+    }
+    .download-section{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .news-top{
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .news-top span{
+        flex-basis: 0%;
+        line-height: 1.8;
+    }
+    .news-top span p{
+        width: 55vw;
+    }
+    .news-down{
+        justify-content: flex-start;
+    }
+    .news-top span h3{
+        margin: 0;
+    }
+    .footer-up{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px
+    }
+}
+
+@media only screen and (max-width:450px){
+    .hideOnMobile{
+        display: none;
+    }
+    .sidebar{
+        width: 100vw;
+    }
+    .lng-down .content-lang{
+        flex-direction: column;
+    }
+    .lng-down .content-lang span{
+        font-size: 11px;
+    }
+    .f .first{
+        font-size: 25px;
+    }
+    .download .f{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+    .download .scnd{
+        width: 80vw;
+        font-size: 18px;
+        padding: 20px;
+    }
+    .download-section{
+        grid-template-columns: 1fr 1fr;
+    }
+    .download-section{
+        grid-template-columns: 1fr;
+    }
+    .news-top{
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .news-top span{
+        flex-basis: 0%;
+        line-height: 1.8;
+    }
+    .news-top span p{
+        width: 55vw;
+    }
+    .news-down{
+        justify-content: flex-start;
+    }
+    .news-top span h3{
+        margin: 0;
+    }
+    .footer-up{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 0;
+    }
+    .footer-down{
+        flex-direction: column;
+    }
+    .footer-down .logo-new {
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .footer {
+        width: 80vw;
+    }
+    .language,.user-type,.general,.sub-news{
+        margin-left: 25px;
+    }
 }

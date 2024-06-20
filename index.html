@@ -9,13 +9,16 @@
   <body>
     <header>
       <nav>
-        <div class="logo">
-          <img
+        <ul class="sidebar">
+          <!-- <li class="logo">
+            <img
             src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
             alt=""
           />
-        </div>
-        <ul>
+          </li> -->
+          <li onclick=hideSidebar()>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          </li>
           <li>
             Products<svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,12 +74,78 @@
               <path d="M480-360 280-560h400L480-360Z" />
             </svg>
           </li>
-          <li>
+        </ul>
+        <ul>
+          <li class="logo">
+            <img
+            src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+            alt=""
+          />
+          </li>
+          <li class="hideOnMobile">
+            Products<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="black"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+          </li>
+          <li class="hideOnMobile">
+            Pricing<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="black"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+          </li>
+          <li class="hideOnMobile">
+            Resources<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="black"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+          </li>
+          <li class="hideOnMobile">
+            About us<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="black"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+          </li>
+          <li class="hideOnMobile">
+            Security and Compliance<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="black"
+            >
+              <path d="M480-360 280-560h400L480-360Z" />
+            </svg>
+          </li>
+          <li class="hideOnMobile">
             <img
               src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
               width="25px"
               alt=""
             />
+          </li>
+          <li class="hideOnPc" onclick=showSidebar()>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
           </li>
         </ul>
       </nav>
@@ -97,99 +166,105 @@
         <div class="btn"><button>Download Mac or Linux version</button></div>
       </section>
       <section class="lng-down">
-        <div class="content-lang">
-          <h2>Download UltraEdit</h2>
-          <span>v2024.0(released 04/19/2024) | Hotfix</span>
+        <div class="lng">
+
+          <div class="content-lang">
+            <h2>Download UltraEdit</h2>
+            <span>v2024.0(released 04/19/2024) | Hotfix</span>
+          </div>
+          <div class="download-section">
+            <div class="english box-download">
+              <p>English</p>
+              <button class="btn-download blue">Download 32-bit</button>
+              <button class="btn-download green">Download 64-bit</button>
+            </div>
+            <div class="english box-download">
+              <p>Deutsh</p>
+              <button class="btn-download blue">Download 32-bit</button>
+              <button class="btn-download green">Download 64-bit</button>
+            </div>
+            <div class="english box-download">
+              <p>Italiano</p>
+              <button class="btn-download blue">Download 32-bit</button>
+              <button class="btn-download green">Download 64-bit</button>
+            </div>
+            <div class="english box-download">
+              <p>Espanol</p>
+              <button class="btn-download blue">Download 32-bit</button>
+              <button class="btn-download green">Download 64-bit</button>
+            </div>
+            <div class="english box-download">
+              <p>Francais</p>
+              <button class="btn-download blue">Download 32-bit</button>
+              <button class="btn-download green">Download 64-bit</button>
+            </div>
+            <div class="english box-download">
+              <p>Portugues brasileiro</p>
+              <button class="btn-download blue">Download 32-bit</button>
+              <button class="btn-download green">Download 64-bit</button>
+            </div>
+            <div class="english box-download">
+              <p>Japanese</p>
+              <button class="btn-download blue">Download 32-bit</button>
+              <button class="btn-download green">Download 64-bit</button>
+            </div>
+            <div class="english box-download">
+              <p>Korean</p>
+              <button class="btn-download blue">Download 32-bit</button>
+              <button class="btn-download green">Download 64-bit</button>
+            </div>
+            <div class="english box-download">
+              <p>Chinese</p>
+              <button class="btn-download blue">Download 32-bit</button>
+              <button class="btn-download green">Download 64-bit</button>
+            </div>
+            <div class="english box-download">
+              <p>Traditional Chinese</p>
+              <button class="btn-download blue">Download 32-bit</button>
+              <button class="btn-download green">Download 64-bit</button>
+            </div>
+          </div>
+        </section>
         </div>
-        <div class="download-section">
-          <div class="english box-download">
-            <p>English</p>
-            <button class="btn-download blue">Download 32-bit</button>
-            <button class="btn-download green">Download 64-bit</button>
-          </div>
-          <div class="english box-download">
-            <p>Deutsh</p>
-            <button class="btn-download blue">Download 32-bit</button>
-            <button class="btn-download green">Download 64-bit</button>
-          </div>
-          <div class="english box-download">
-            <p>Italiano</p>
-            <button class="btn-download blue">Download 32-bit</button>
-            <button class="btn-download green">Download 64-bit</button>
-          </div>
-          <div class="english box-download">
-            <p>Espanol</p>
-            <button class="btn-download blue">Download 32-bit</button>
-            <button class="btn-download green">Download 64-bit</button>
-          </div>
-          <div class="english box-download">
-            <p>Francais</p>
-            <button class="btn-download blue">Download 32-bit</button>
-            <button class="btn-download green">Download 64-bit</button>
-          </div>
-          <div class="english box-download">
-            <p>Portugues brasileiro</p>
-            <button class="btn-download blue">Download 32-bit</button>
-            <button class="btn-download green">Download 64-bit</button>
-          </div>
-          <div class="english box-download">
-            <p>Japanese</p>
-            <button class="btn-download blue">Download 32-bit</button>
-            <button class="btn-download green">Download 64-bit</button>
-          </div>
-          <div class="english box-download">
-            <p>Korean</p>
-            <button class="btn-download blue">Download 32-bit</button>
-            <button class="btn-download green">Download 64-bit</button>
-          </div>
-          <div class="english box-download">
-            <p>Chinese</p>
-            <button class="btn-download blue">Download 32-bit</button>
-            <button class="btn-download green">Download 64-bit</button>
-          </div>
-          <div class="english box-download">
-            <p>Traditional Chinese</p>
-            <button class="btn-download blue">Download 32-bit</button>
-            <button class="btn-download green">Download 64-bit</button>
-          </div>
-        </div>
-      </section>
       <section class="newsLetter">
-        <div class="news-top">
-          <span>
-            <h3>Join the UltraEdit newsletter</h3>
-            <p>
-              Sign up for our newsletter and receive emails for the latest news,
-              blogs, and special deals on UltraEdit.
-            </p>
-          </span>
-          <div class="sign">
-            <form action="#" class="sign-up">
-              <h3>Subscribe to our emails</h3>
-              <label for="">Enter email address</label>
-              <input type="text" placeholder="Email" />
-              <button type="submit" class="sign-btn">Sign UP</button>
-            </form>
+        <div class="news-all">
+
+          <div class="news-top">
+            <span>
+              <h3>Join the UltraEdit newsletter</h3>
+              <p>
+                Sign up for our newsletter and receive emails for the latest news,
+                blogs, and special deals on UltraEdit.
+              </p>
+            </span>
+            <div class="sign">
+              <form action="#" class="sign-up">
+                <h3>Subscribe to our emails</h3>
+                <label for="">Enter email address</label>
+                <input type="text" placeholder="Email" />
+                <button type="submit" class="sign-btn">Sign UP</button>
+              </form>
+            </div>
           </div>
+          <div class="news-down">
+            <h3>EXE or MSI?</h3>
+            <p>
+              The EXE builds of our products are the preferred download for most
+              of our users, running Windows 8.1 and later.
+            </p>
+            <p>
+              We make MSI builds available for bulk or silent deployments (command
+              line, GPO, SCCM, etc.). Get the UltraEdit MSI installer
+            </p>
+            <h3>Free trial period</h3>
+            <p>
+              This application comes with a free, fully functional 30 day trial
+              period.After the trial period expires, you must purchase a license
+              to continue using it.
+            </p>
+          </div>
+        </section>
         </div>
-        <div class="news-down">
-          <h3>EXE or MSI?</h3>
-          <p>
-            The EXE builds of our products are the preferred download for most
-            of our users, running Windows 8.1 and later.
-          </p>
-          <p>
-            We make MSI builds available for bulk or silent deployments (command
-            line, GPO, SCCM, etc.). Get the UltraEdit MSI installer
-          </p>
-          <h3>Free trial period</h3>
-          <p>
-            This application comes with a free, fully functional 30 day trial
-            period.After the trial period expires, you must purchase a license
-            to continue using it.
-          </p>
-        </div>
-      </section>
       <section>
         <div class="footer-up">
           <div class="language">
@@ -349,5 +424,16 @@
         <p>&copy; 2024 UltraEdit. All rights reserved</p>
       </div>
     </footer>
+    <script>
+      function showSidebar(){
+        const sidebar= document.querySelector('.sidebar')
+        sidebar.style.display='flex'
+      }
+
+      function hideSidebar(){
+        const sidebar= document.querySelector('.sidebar')
+        sidebar.style.display='none'
+      }
+    </script>
   </body>
 </html>
