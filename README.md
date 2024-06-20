@@ -9,10 +9,10 @@ This project is a clone of the UltraEdit website, created using only HTML and CS
 3. Mimics UltraEdit Design: The design and layout closely follow the original UltraEdit website to provide a similar look and feel.
 
 # Live Demo
-You can view the live version of the UltraEdit clone here.
+You can view the live version of the UltraEdit clone [here](https://ultra-edit-clone-psi.vercel.app/)
 
 # Repository
-The code for this project is available on GitHub. You can find the repository here.
+The code for this project is available on GitHub. You can find the repository [here](https://github.com/adity3902/UltraEdit).
 
 # Author
 This project was created by Aditya Singh. If you have any questions or feedback, feel free to contact me via GitHub.
@@ -21,13 +21,13 @@ This project was created by Aditya Singh. If you have any questions or feedback,
 To run the project locally, follow these steps:
 
 1. Clone the repository:
-'''bash
+```bash
 git clone https://github.com/adity3902/UltraEdit.git
-'''
+```
 2. Navigate to the project directory:
-'''bash
+```bash
 cd UltraEdit
-'''
+```
 3. Open index.html in your browser to view the website.
 
 
