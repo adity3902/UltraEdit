@@ -3,6 +3,10 @@
 # Overview
 This project is a clone of the UltraEdit website, created using only HTML and CSS. UltraEdit is a pioneer in text editing software with a comprehensive suite of products catering to individual programmers, startups, large enterprises, and corporations. The clone aims to mimic the design and layout of the original UltraEdit website to provide a similar user experience.
 
+# Preview
+
+![UltraEdit Clone Preview](./Assets/preview.png)
+
 # Features of the Clone
 1. HTML and CSS Only: The clone is built entirely with HTML and CSS, without any JavaScript or backend technologies.
 2. Responsive Design: The website is designed to be responsive and looks good on various devices.
